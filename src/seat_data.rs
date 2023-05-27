@@ -1,4 +1,4 @@
-use wayland_protocols::wlr::unstable::data_control::v1::client::{
+use wayland_protocols_wlr::data_control::v1::client::{
     zwlr_data_control_device_v1::ZwlrDataControlDeviceV1, zwlr_data_control_offer_v1::ZwlrDataControlOfferV1,
 };
 

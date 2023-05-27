@@ -9,7 +9,7 @@ use std::{
 };
 
 use os_pipe::PipeWriter;
-use wayland_protocols::wlr::unstable::data_control::v1::server::{
+use wayland_protocols_wlr::data_control::v1::server::{
     zwlr_data_control_manager_v1::{Request as ServerManagerRequest, ZwlrDataControlManagerV1 as ServerManager},
     zwlr_data_control_offer_v1::{Request as ServerOfferRequest, ZwlrDataControlOfferV1 as ServerOffer},
 };

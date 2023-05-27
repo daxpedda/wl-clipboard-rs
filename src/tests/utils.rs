@@ -1,6 +1,6 @@
 use std::{ffi::OsString, mem, thread, time::Duration};
 
-use wayland_protocols::wlr::unstable::data_control::v1::server::zwlr_data_control_manager_v1::{
+use wayland_protocols_wlr::data_control::v1::server::zwlr_data_control_manager_v1::{
     Request as ServerManagerRequest, ZwlrDataControlManagerV1 as ServerManager,
 };
 use wayland_server::{protocol::wl_seat::WlSeat as ServerSeat, Filter, Main};

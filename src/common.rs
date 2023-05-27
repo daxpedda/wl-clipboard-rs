@@ -3,7 +3,7 @@ use std::{cell::RefCell, ffi::OsString, io, rc::Rc};
 use wayland_client::{
     global_filter, protocol::wl_seat::WlSeat, ConnectError, Display, EventQueue, GlobalManager, Interface, Main,
 };
-use wayland_protocols::wlr::unstable::data_control::v1::client::zwlr_data_control_manager_v1::ZwlrDataControlManagerV1;
+use wayland_protocols_wlr::data_control::v1::client::zwlr_data_control_manager_v1::ZwlrDataControlManagerV1;
 
 use crate::{handlers::seat_handler, seat_data::SeatData};
 

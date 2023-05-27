@@ -11,7 +11,7 @@ use std::{
 
 use nix::fcntl::{fcntl, FcntlArg, OFlag};
 use os_pipe::pipe;
-use wayland_protocols::wlr::unstable::data_control::v1::server::{
+use wayland_protocols_wlr::data_control::v1::server::{
     zwlr_data_control_device_v1::{Request as ServerDeviceRequest, ZwlrDataControlDeviceV1 as ServerDevice},
     zwlr_data_control_manager_v1::{Request as ServerManagerRequest, ZwlrDataControlManagerV1 as ServerManager},
     zwlr_data_control_source_v1::{Request as ServerSourceRequest, ZwlrDataControlSourceV1 as ServerSource},

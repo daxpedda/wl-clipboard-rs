@@ -16,7 +16,7 @@ use std::{
 
 use log::trace;
 use wayland_client::{ConnectError, EventQueue, Main, Proxy};
-use wayland_protocols::wlr::unstable::data_control::v1::client::{
+use wayland_protocols_wlr::data_control::v1::client::{
     zwlr_data_control_device_v1::ZwlrDataControlDeviceV1, zwlr_data_control_manager_v1::ZwlrDataControlManagerV1,
     zwlr_data_control_source_v1::ZwlrDataControlSourceV1,
 };

@@ -19,33 +19,33 @@ members = [".", "wl-clipboard-rs-tools"]
 derive-new = "0.5.9"
 libc = "0.2.119"
 log = "0.4.14"
-nix = "0.24.2"
+nix = "0.26.0"
 os_pipe = "1.0.1"
 tempfile = "3.3.0"
 thiserror = "1"
 tree_magic_mini = "3.0.3"
-wayland-client = "0.29.4"
+wayland-backend = "0.1"
+wayland-client = "0.30.0"
 
-[dependencies.wayland-protocols]
-version = "0.29.4"
-features = ["client", "unstable_protocols"]
+[dependencies.wayland-protocols-wlr]
+version = "0.1.0"
+features = ["client"]
 
 [dev-dependencies]
-wayland-server = "0.29.4"
+wayland-server = "0.30.0"
 
-[dev-dependencies.wayland-protocols]
-version = "0.29.4"
-features = ["server", "unstable_protocols"]
+[dev-dependencies.wayland-protocols-wlr]
+version = "0.1.0"
+features = ["server"]
 
 [features]
 # Link to libwayland-client.so instead of using the Rust implementation.
 native_lib = [
-    "wayland-client/use_system_lib",
-    "wayland-server/use_system_lib",
+    "wayland-backend/client_system",
+    "wayland-backend/server_system",
 ]
 
 dlopen = [
     "native_lib",
-    "wayland-client/dlopen",
-    "wayland-server/dlopen",
+    "wayland-backend/dlopen",
 ]

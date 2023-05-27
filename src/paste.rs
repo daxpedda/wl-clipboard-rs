@@ -11,7 +11,7 @@ use std::{
 
 use os_pipe::{pipe, PipeReader};
 use wayland_client::{ConnectError, EventQueue};
-use wayland_protocols::wlr::unstable::data_control::v1::client::zwlr_data_control_offer_v1::ZwlrDataControlOfferV1;
+use wayland_protocols_wlr::data_control::v1::client::zwlr_data_control_offer_v1::ZwlrDataControlOfferV1;
 
 use crate::{
     common::{self, initialize, CommonData},
